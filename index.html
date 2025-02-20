@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/cd3a6265d0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="muzic-player">
+            <nav>
+                <div class="cercal">
+                    <span class="material-symbols-outlined">chevron_left</span>
+                </div>
+                <div class="cercal">
+                    <span class="material-symbols-outlined">menu</span>
+                </div>
+            </nav>
+            <img src="Images/pec.jpg" class="song-img">
+            <h1>Despacito</h1>
+            <p>Luis Fonsi Ft. Puerto Rican</p>
+            <audio id="song">
+                <source src="Images/0220.MP3">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div onclick="pre()"><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playpause()"><i class="fa-solid fa-play" id="play"></i></div>
+                <div onclick="skip()"><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="script.js"></script>
+</html>
